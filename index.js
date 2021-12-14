@@ -6,8 +6,7 @@ let ws_host = 'localhost';
 let ws_port = '3000';
 
 const options = { WebSocket: Html5WebSocket };
-//const rws = new ReconnectingWebSocket('ws://localhost:3000/ws', undefined, op>
-const rws = new ReconnectingWebSocket('ws://' + ws_host + ':' + ws_port + '/ws'>
+const rws = new ReconnectingWebSocket('ws://' + ws_host + ':' + ws_port + '/ws', undefined, options);
 
 
 rws.timeout = 1000;
